@@ -13,3 +13,4 @@ dependencies:
   - pip
   - pip:
     - py2neo
+    - neotime
