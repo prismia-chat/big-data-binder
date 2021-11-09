@@ -4,7 +4,7 @@ VERSION1="2.13"
 VERSION2="3.0.0"
 
 if [ ! -f $VERSION2-unix.tar.gz ]; then
-  !wget https://downloads.apache.org/kafka/$VERSION2/kafka_$VERSION1-$VERSION2.tgz
+  wget https://downloads.apache.org/kafka/$VERSION2/kafka_$VERSION1-$VERSION2.tgz
 fi
 
 tar -xzf kafka_$VERSION1-$VERSION2.tgz
