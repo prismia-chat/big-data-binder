@@ -1,7 +1,11 @@
 #!/bin/bash
 set -eux
-export NEO4J_HOME=${CONDA_DIR}/neo4j-community-4.2.0
 
-${CONDA_DIR}/neo4j-community-4.2.0/bin/neo4j start
+VERSION1="2.13"
+VERSION2="3.0.0"
+KAFKA_DIR=${CONDA_DIR}/kafka_$VERSION1-$VERSION2
+
+${KAFKA_DIR}/bin/zookeeper-server-start.sh -daemon ${KAFKA_DIR}/config/zookeeper.properties
+${KAFKA_DIR}/bin/kafka-server-start.sh -daemon ${KAFKA_DIR}/config/server.properties
 
 exec "$@"
