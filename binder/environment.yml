@@ -1,4 +1,4 @@
-name: kafka-binder
+name: big-data-binder
 
 channels:
   - conda-forge
@@ -7,6 +7,8 @@ channels:
 dependencies:
   - python>=3.8
   - jupyterlab=3
+  - pandas
   - pip
   - pip:
     - kafka-python
+    - pyspark
