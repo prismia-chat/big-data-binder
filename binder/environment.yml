@@ -11,4 +11,3 @@ dependencies:
   - pip
   - pip:
     - kafka-python
-    - pyspark
