@@ -12,3 +12,5 @@ mv kafka_$VERSION1-$VERSION2 ${CONDA_DIR}/
 rm kafka_$VERSION1-$VERSION2.tgz
 
 export KAFKA_DIR=${CONDA_DIR}/kafka_$VERSION1-$VERSION2
+
+pip install pyspark
